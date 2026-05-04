@@ -1,1 +1,10 @@
 #include <iostream>
+using namespace std;
+
+class mahasiswa {
+public:
+};
+
+int main() {
+    return 0;
+}
