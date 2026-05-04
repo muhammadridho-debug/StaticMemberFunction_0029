@@ -18,6 +18,12 @@ angka::angka(int i) { // constructor
     isiData();
 }
 
+void angka::cetakData() {
+    for (int i = 1; i <= panjang; i++) {
+        cout << i << " = " << arr[i] << endl;
+    }
+}
+
 void angka::isiData() {
     for (int i = 1; i <= panjang; i++) {
         cout << i << " = ";
