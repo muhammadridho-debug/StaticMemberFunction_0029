@@ -18,6 +18,13 @@ angka::angka(int i) { // constructor
     isiData();
 }
 
+angka::~angka() { // destructor
+    cout << endl;
+    cetakData();
+    delete[] arr; // Melepaskan memori agar tidak terjadi memory leak
+    cout << "Alamat Array Sudah Dilepaskan" << endl;
+}
+
 void angka::cetakData() {
     for (int i = 1; i <= panjang; i++) {
         cout << i << " = " << arr[i] << endl;
