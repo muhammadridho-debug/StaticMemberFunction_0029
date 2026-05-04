@@ -17,6 +17,10 @@ public:
 mahasiswa::mahasiswa() {
 }
 
+mahasiswa::mahasiswa(int iNim) {
+    nim = iNim; //definisi hanya untuk nim
+}
+
 int main() {
     return 0;
 }
