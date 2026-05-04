@@ -6,11 +6,19 @@ private:
     int *arr;
     int panjang;
 public:
-    angka(int); 
-    ~angka();   
+    angka(int); // constructor
+    ~angka();   // destructor
     void cetakData();
     void isiData();
 };
+
+void angka::isiData() {
+    for (int i = 1; i <= panjang; i++) {
+        cout << i << " = ";
+        cin >> arr[i];
+    }
+    cout << endl;
+}
 
 int main() {
     return 0;
