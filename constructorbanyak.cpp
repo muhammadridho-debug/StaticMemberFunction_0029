@@ -14,6 +14,9 @@ public:
     void cetak();
 };
 
+mahasiswa::mahasiswa() {
+}
+
 int main() {
     return 0;
 }
