@@ -12,6 +12,12 @@ public:
     void isiData();
 };
 
+angka::angka(int i) { // constructor
+    panjang = i;
+    arr = new int[i]; // Alokasi memori
+    isiData();
+}
+
 void angka::isiData() {
     for (int i = 1; i <= panjang; i++) {
         cout << i << " = ";
